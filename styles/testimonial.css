@@ -18,13 +18,20 @@
         align-items: center;
         margin-bottom: 1.3846rem;
         .avatar {
+            position: relative;
+            width: 28px;
+            height: 28px;
             grid-column: 1;
             grid-row: 1 / span 2;
-            max-height: 28px;
+            overflow: visible;
             & > img {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
                 overflow: hidden;
                 border-radius: 50%;
-                max-width: 100%;
+                width: 100%;
                 height: auto;
                 box-sizing: content-box;
             }

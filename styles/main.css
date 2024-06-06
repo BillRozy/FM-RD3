@@ -71,7 +71,7 @@ body {
     }
     .grid {
         grid-template: repeat(2, max-content) / repeat(4, 1fr);
-        gap: 2.3077rem;
+        column-gap: 2.3077rem;
         .grid-item:nth-child(1) {
             grid-row: 1;
             grid-column: 1 / 3;
